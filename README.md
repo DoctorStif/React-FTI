@@ -1,3 +1,5 @@
+This project is like Facebook-Twitter-Instagram come together. Don't forget too change your Firebase API keys in the firebase file, src>firebase>firebase.utils.js. This is a very old project so you have to download specific version of the dependencies and change Firebase API keys and thats all is needed. All of this project inclueding html-css styling and js-jsx codes made by myself.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
