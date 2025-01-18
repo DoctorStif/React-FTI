@@ -1,0 +1,232 @@
+.messages-sidebar-right {
+  font-size: 1rem;
+  background-color: #d5d8d4;
+  flex: 4;
+  margin-left: 2rem;
+}
+.comment-section {
+  list-style: none;
+  max-width: 100rem;
+  width: 100%;
+  margin: 5rem auto;
+  padding: 1rem;
+}
+
+.comment {
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.comment.user-comment {
+  color: #808080;
+}
+
+.comment.author-comment {
+  color: #60686d;
+  justify-content: flex-end;
+}
+
+/* User and time info */
+
+.comment .info {
+  width: 17%;
+}
+
+.comment.user-comment .info {
+  text-align: right;
+}
+
+.comment.author-comment .info {
+  order: 3;
+}
+
+.comment .info a {
+  /* User name */
+  display: block;
+  text-decoration: none;
+  color: #656c71;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem 0 0.3rem 0;
+}
+
+.comment .info span {
+  /* Time */
+  font-size: 1rem;
+  color: #9ca7af;
+}
+
+/* The user avatar */
+
+.comment .avatar {
+  width: 8%;
+}
+
+.comment.user-comment .avatar {
+  padding: 1rem 1.5rem 0 0.3rem;
+}
+
+.comment.author-comment .avatar {
+  order: 2;
+  padding: 1rem 0.3rem 0 1.5rem;
+}
+
+.comment .avatar img {
+  display: block;
+  border-radius: 50%;
+}
+
+.comment.user-comment .avatar img {
+  float: right;
+}
+
+/* The comment text */
+
+.comment p {
+  line-height: 1.5;
+  padding: 1.5rem 2rem;
+  width: 50%;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.comment.user-comment p {
+  background-color: #f3f3f3;
+}
+
+.comment.author-comment p {
+  background-color: #e2f8ff;
+  order: 1;
+}
+
+.user-comment p:after {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 0.2rem solid #f3f3f3;
+  left: -0.5rem;
+  top: 1.5rem;
+}
+
+.author-comment p:after {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 0.2rem solid #e2f8ff;
+  right: -0.5rem;
+  top: 1.5rem;
+}
+
+/* Comment form */
+
+.write-new {
+  margin: 5rem auto 0;
+  width: 50%;
+}
+
+.write-new textarea {
+  color: #444;
+  font: inherit;
+
+  outline: 0;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #cecece;
+  background-color: #fefefe;
+  box-shadow: 0.1rem 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.06);
+  overflow: auto;
+
+  width: 100%;
+  min-height: 8rem;
+  padding: 1.5rem 2rem;
+}
+
+.write-new img {
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}
+
+.write-new button {
+  float: right;
+  background-color: #87bae1;
+  box-shadow: 0.1rem 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.2rem;
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+
+  padding: 1rem 2.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive styles */
+
+@media (max-width: 800px) {
+  /* Make the paragraph in the comments take up the whole width,
+  forcing the avatar and user info to wrap to the next line*/
+  .comment p {
+    width: 100%;
+  }
+
+  /* Reverse the order of elements in the user comments,
+  so that the avatar and info appear after the text. */
+  .comment.user-comment .info {
+    order: 3;
+    text-align: left;
+  }
+
+  .comment.user-comment .avatar {
+    order: 2;
+  }
+
+  .comment.user-comment p {
+    order: 1;
+  }
+
+  /* Align toward the beginning of the container (to the left)
+  all the elements inside the author comments. */
+  .comment.author-comment {
+    justify-content: flex-start;
+  }
+
+  .comment-section {
+    margin-top: 1rem;
+  }
+
+  .comment .info {
+    width: auto;
+  }
+
+  .comment .info a {
+    padding-top: 1.5rem;
+  }
+
+  .comment.user-comment .avatar,
+  .comment.author-comment .avatar {
+    padding: 1.5rem 1rem 0 1.5rem;
+    width: auto;
+  }
+
+  .comment.user-comment p:after,
+  .comment.author-comment p:after {
+    width: 1rem;
+    height: 1rem;
+    top: initial;
+    left: 2.5rem;
+    bottom: -0.6rem;
+  }
+
+  .write-new {
+    width: 100%;
+  }
+}

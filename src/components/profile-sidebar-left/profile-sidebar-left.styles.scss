@@ -1,0 +1,29 @@
+﻿.sidebar-left {
+  font-size: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-left img {
+  width: 15rem;
+  margin: 0;
+  padding: 0;
+  margin-top: .5rem;
+  height: 15rem;
+  outline: 1rem ridge rgba(85, 70, 92, 0.6);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-left h3 a {
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-left p {
+  font-size: 1.5rem;
+  color: rgb(44, 40, 49);
+  margin-bottom: 2rem;
+}

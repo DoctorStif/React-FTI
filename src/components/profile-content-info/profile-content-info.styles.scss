@@ -1,0 +1,26 @@
+﻿.content-info {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 2rem;
+}
+
+.content-info ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-info li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-info li label {
+  font-size: 1.7rem;
+  color: #333;
+  &:hover {
+    cursor: pointer;
+  }
+}

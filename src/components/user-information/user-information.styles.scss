@@ -1,0 +1,36 @@
+.user-information {
+  display: flex;
+  flex-direction: column;
+  background: #dbe2ef;
+  border-radius: .5rem;
+  border: 1px solid #e3e3e3;
+  padding: 2rem;
+}
+
+.user-information ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 20rem;
+}
+
+.user-information li {
+  margin-top: 2rem;
+  display: flex;
+  min-height: 5rem;
+}
+
+.user-information a {
+  color: #112d4e;
+  min-width: 60%;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+}
+
+.user-information a:hover {
+  background: #3f72af;
+  padding-left: 3rem;
+  border-radius: 1rem;
+  color: #f9f7f7;
+}

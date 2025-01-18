@@ -1,0 +1,64 @@
+﻿.worldwide-sidebar-left {
+  font-size: 2rem;
+  flex: 1;
+}
+
+input[type='search'] {
+  padding: 0.5rem 2rem;
+  border: 1px solid #4d545e;
+  background-color: #e5e8ee;
+  min-height: 2rem;
+  border-radius: 15px;
+  margin-right: 5rem;
+  outline: none;
+}
+
+.worldwide-user-information {
+  display: flex;
+  flex-direction: column;
+  background: #dbe2ef;
+  color: #112d4e;
+  border-radius: 0.5rem;
+  border: 1px solid #e3e3e3;
+  padding: 2rem;
+}
+
+.worldwide-user-information ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 20rem;
+}
+
+.worldwide-user-information li {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.worldwide-user-information p {
+  font-size: 1.5rem;
+  color: #112d4e;
+}
+
+.tweets-worldwide {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #dbe2ef;
+  border-radius: 0.5rem;
+  border: 1px solid #e3e3e3;
+}
+
+.tweets-worldwide h3 {
+  color: #112d4e;
+}
+
+.tweets-worldwide a {
+  color: #3f72af;
+}
+
+.tweets-worldwide span {
+  color: #112d4e;
+}

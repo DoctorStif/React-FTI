@@ -1,0 +1,121 @@
+﻿.comment-user {
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+  align-items: flex-start;
+  // border: 0.1rem solid rgb(246, 246, 246);
+  border: 0.1rem solid #dddada;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+.comment-user--posts {
+  display: flex;
+  flex-direction: row;
+  min-height: 10rem;
+  align-items: flex-start;
+  // border: 0.1rem solid rgb(246, 246, 246);
+  border: 0.1rem solid #dddada;
+  border-radius: 0.5rem;
+  width: 100%;
+  overflow: auto;
+}
+
+.comment-user--posts img {
+  padding-top: 0.5rem;
+  margin: 1rem;
+  width: auto;
+  height: 100%;
+  max-height: 4.5rem;
+}
+
+.comment-user--posts > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+}
+
+.comment-user--posts div > div {
+  display: flex;
+}
+
+.comment-content {
+  width: 100%;
+  background: rgba(128, 255, 51, 0.18);
+  padding: 0rem 0rem 2rem 5rem;
+  overflow: auto;
+}
+
+.comment-content ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.textarea-comment_li {
+  width: 100%;
+}
+
+.textarea-button_li {
+  width: 30%;
+}
+
+.textarea-button_li > button {
+  width: 30%;
+  height: 100%;
+  background-color: green;
+}
+
+.textarea-comment_textarea {
+  width: 80%;
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+.comment-user span {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.comment-user p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #4d545e;
+}
+/* Modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  max-height: 100%;
+  padding-top: 5rem;
+}
+
+.modal-main {
+  align-self: center;
+  background: white;
+  width: 50%;
+  max-height: 100%;
+  left: 50%;
+  // transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.display-none {
+  display: none;
+}

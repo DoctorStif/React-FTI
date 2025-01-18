@@ -1,0 +1,19 @@
+﻿/* Cover Image */
+.img-cover {
+  display: block;
+  overflow: hidden;
+  // background-image: url('../../assets/img/defaultCoverImage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  filter: drop-shadow(1.6rem 1.6rem 2rem rgb(90, 84, 84));
+}
+/* Main */
+main {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  margin: 2rem 10%;
+}

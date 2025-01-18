@@ -1,0 +1,100 @@
+.index-nav {
+  padding: 0 2.5%;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background: #112d4e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+  box-shadow: 0rem 0rem 1rem .2rem #112d4e;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 10rem;
+  color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo>ion-icon {
+  font-size: 2.5rem;
+}
+
+.index-nav-left {
+  display: flex;
+}
+
+.index-nav ul {
+  display: flex;
+  text-decoration-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.index-nav li {
+  list-style-type: none;
+  margin-right: 5rem;
+}
+
+.index-nav li a {
+  text-decoration: none;
+  color: #f9f7f7;
+}
+
+/* Background Image */
+.home-background {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+/* Nav Form */
+.index-nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rem;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  padding: 0.4rem 0.5rem;
+  margin: 0.8rem .5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form button[type="submit"] {
+  background-color: #3f72af;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.4rem 0.5rem;
+  margin: 0.8rem .5rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  min-width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #6188bb;
+}
